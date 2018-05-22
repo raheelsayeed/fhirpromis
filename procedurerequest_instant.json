@@ -1,0 +1,56 @@
+{
+  "resourceType": "ProcedureRequest",
+  "id": "154536",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-05-22T13:34:25.597-04:00"
+  },
+  "extension": [
+    {
+      "url": "http://healthmeasures.com/reveal-score-to-patient",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://healthmeasures.com/display-title-to-patient",
+      "valueBoolean": false
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "386053000",
+          "display": "Evaluation procedure (procedure)"
+        }
+      ],
+      "text": "Evaluation"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "61952-8",
+        "display": "PROMIS Bank v1.0 - Depression"
+      }
+   ],
+    "text": "PROMIS Bank v1.0 - Depression"
+  },
+  "subject": {
+    "reference": "Patient/2e27c71e-30c8-4ceb-8c1c-5641e066c0a4"
+  },
+  "occurrenceDateTime": "2018-05-22T17:34:25",
+  "authoredOn": "2018-05-22T17:34:25",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/smart-Practitioner-71081332",
+      "display": "Joseph I Ross, MD"
+    },
+    "onBehalfOf": {
+      "display": "SMART Hospital"
+    }
+  }
+}
