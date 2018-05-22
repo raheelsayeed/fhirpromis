@@ -1,0 +1,222 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "154543",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-05-22T15:00:30.219-04:00"
+  },
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "LL1016-6",
+      "status": "active",
+      "compose": {
+        "include": [
+          {
+            "system": "http://loinc.org",
+            "concept": [
+              {
+                "id": "LA6270-8",
+                "code": "LA6270-8",
+                "display": "Never"
+              },
+              {
+                "id": "LA10066-1",
+                "code": "LA10066-1",
+                "display": "Rarely"
+              },
+              {
+                "id": "LA10082-8",
+                "code": "LA10082-8",
+                "display": "Sometimes"
+              },
+              {
+                "id": "LA10044-8",
+                "code": "LA10044-8",
+                "display": "Often"
+              },
+              {
+                "id": "LA9933-8",
+                "code": "LA9933-8",
+                "display": "Always"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "Questionnaire",
+      "id": "61922-1",
+      "title": "PROMIS Bank v1.0 - Anxiety",
+      "status": "active",
+      "publisher": "PROMIS Health Organization and PROMIS Cooperative Group",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "61922-1"
+        }
+      ],
+      "subjectType": [
+        "Patient"
+      ],
+      "item": [
+        {
+          "linkId": "EDANX07",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "61927-0"
+            }
+          ],
+          "text": "In the past 7 days\nI felt like I needed help for my anxiety",
+          "type": "choice",
+          "options": {
+            "reference": "#LL1016-6"
+          }
+        },
+        {
+          "linkId": "EDANX40",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "61941-1"
+            }
+          ],
+          "text": "In the past 7 days\nI found it hard to focus on anything other than my anxiety",
+          "type": "choice",
+          "options": {
+            "reference": "#LL1016-6"
+          }
+        },
+        {
+          "linkId": "EDANX41",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "61942-9"
+            }
+          ],
+          "text": "In the past 7 days\nMy worries overwhelmed me",
+          "type": "choice",
+          "options": {
+            "reference": "#LL1016-6"
+          }
+        },
+        {
+          "linkId": "EDANX53",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "61949-4"
+            }
+          ],
+          "text": "In the past 7 days\nI felt uneasy",
+          "type": "choice",
+          "options": {
+            "reference": "#LL1016-6"
+          }
+        },
+        {
+          "linkId": "tscore",
+          "type": "string",
+          "readOnly": true
+        },
+        {
+          "linkId": "stderror",
+          "type": "string",
+          "readOnly": true
+        }
+      ]
+    }
+  ],
+  "identifier": {
+    "system": "http://loinc.org",
+    "value": "61922-1"
+  },
+  "basedOn": [
+    {
+      "reference": "ProcedureRequest/154530"
+    }
+  ],
+  "questionnaire": {
+    "reference": "#61922-1"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/2e27c71e-30c8-4ceb-8c1c-5641e066c0a4"
+  },
+  "authored": "2018-05-22",
+  "item": [
+    {
+      "linkId": "EDANX07",
+      "text": "In the past 7 days\nI felt like I needed help for my anxiety",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA10066-1",
+            "display": "Rarely"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EDANX40",
+      "text": "In the past 7 days\nI found it hard to focus on anything other than my anxiety",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA10066-1",
+            "display": "Rarely"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EDANX41",
+      "text": "In the past 7 days\nMy worries overwhelmed me",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA10066-1",
+            "display": "Rarely"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EDANX53",
+      "text": "In the past 7 days\nI felt uneasy",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA10082-8",
+            "display": "Sometimes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "tscore",
+      "text": "T-Score",
+      "answer": [
+        {
+          "valueString": "58.0"
+        }
+      ]
+    },
+    {
+      "linkId": "stderror",
+      "text": "Standard Error",
+      "answer": [
+        {
+          "valueString": "2.0"
+        }
+      ]
+    }
+  ]
+}
