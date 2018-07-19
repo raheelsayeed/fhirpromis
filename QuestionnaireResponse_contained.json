@@ -1,0 +1,221 @@
+{
+  "resourceType" : "QuestionnaireResponse",
+  "subject" : {
+    "reference" : "Patient\/2e27c71e-30c8-4ceb-8c1c-5641e066c0a4"
+  },
+  "identifier" : {
+    "system" : "http:\/\/loinc.org",
+    "value" : "62212-6"
+  },
+  "basedOn" : [
+    {
+      "reference" : "ProcedureRequest\/161918"
+    }
+  ],
+  "questionnaire" : {
+    "reference" : "#contained-62212-6"
+  },
+  "status" : "completed",
+  "contained" : [
+    {
+      "publisher" : "PROMIS Health Organization and PROMIS Cooperative Group",
+      "status" : "active",
+      "resourceType" : "Questionnaire",
+      "id" : "contained-62212-6",
+      "contained" : [
+        {
+          "status" : "active",
+          "resourceType" : "ValueSet",
+          "id" : "LL1019-0",
+          "compose" : {
+            "include" : [
+              {
+                "concept" : [
+                  {
+                    "id" : "LA13879-4",
+                    "code" : "LA13879-4",
+                    "display" : "Had no pain"
+                  },
+                  {
+                    "id" : "23FECE02-E4B5-4EFA-BC90-3FCEC808422E",
+                    "code" : "23FECE02-E4B5-4EFA-BC90-3FCEC808422E",
+                    "display" : "Never"
+                  },
+                  {
+                    "id" : "1D2F0D68-49E2-4DB8-BB66-C3D301AC3947",
+                    "code" : "1D2F0D68-49E2-4DB8-BB66-C3D301AC3947",
+                    "display" : "Rarely"
+                  },
+                  {
+                    "id" : "6D7957C7-7F8C-4EEA-A33D-01ABCAEE2130",
+                    "code" : "6D7957C7-7F8C-4EEA-A33D-01ABCAEE2130",
+                    "display" : "Sometimes"
+                  },
+                  {
+                    "id" : "5F7779CF-D102-4C7D-8916-1AE4D0795132",
+                    "code" : "5F7779CF-D102-4C7D-8916-1AE4D0795132",
+                    "display" : "Often"
+                  },
+                  {
+                    "id" : "20844600-6CF7-4477-A207-1C0219DB5A13",
+                    "code" : "20844600-6CF7-4477-A207-1C0219DB5A13",
+                    "display" : "Always"
+                  }
+                ],
+                "system" : "http:\/\/www.assessmentcenter.net"
+              }
+            ]
+          }
+        }
+      ],
+      "code" : [
+        {
+          "code" : "62212-6",
+          "system" : "http:\/\/loinc.org"
+        }
+      ],
+      "item" : [
+        {
+          "options" : {
+            "reference" : "#LL1019-0"
+          },
+          "linkId" : "PAINBE8",
+          "code" : [
+            {
+              "code" : "61717-5",
+              "system" : "http:\/\/loinc.org"
+            }
+          ],
+          "text" : "In the past 7 days\nWhen I was in pain I moved extremely slowly",
+          "type" : "choice"
+        },
+        {
+          "options" : {
+            "reference" : "#LL1019-0"
+          },
+          "linkId" : "PAINBE16",
+          "code" : [
+            {
+              "code" : "61721-7",
+              "system" : "http:\/\/loinc.org"
+            }
+          ],
+          "text" : "In the past 7 days\nWhen I was in pain I appeared upset or sad",
+          "type" : "choice"
+        },
+        {
+          "options" : {
+            "reference" : "#LL1019-0"
+          },
+          "linkId" : "PAINBE26",
+          "code" : [
+            {
+              "code" : "61729-0",
+              "system" : "http:\/\/loinc.org"
+            }
+          ],
+          "text" : "In the past 7 days\nPain caused me to curl up in a ball",
+          "type" : "choice"
+        },
+        {
+          "options" : {
+            "reference" : "#LL1019-0"
+          },
+          "linkId" : "PAINBE27",
+          "code" : [
+            {
+              "code" : "61730-8",
+              "system" : "http:\/\/loinc.org"
+            }
+          ],
+          "text" : "In the past 7 days\nI had pain so bad it made me cry",
+          "type" : "choice"
+        },
+        {
+          "linkId" : "tscore",
+          "readOnly" : true,
+          "type" : "string"
+        },
+        {
+          "linkId" : "stderror",
+          "readOnly" : true,
+          "type" : "string"
+        }
+      ],
+      "subjectType" : [
+        "Patient"
+      ],
+      "title" : "PROMIS Bank v1.0 - Pain Behavior"
+    }
+  ],
+  "authored" : "2018-07-19T14:43:03.83209Z",
+  "item" : [
+    {
+      "answer" : [
+        {
+          "valueCoding" : {
+            "code" : "4",
+            "display" : "Sometimes"
+          }
+        }
+      ],
+      "linkId" : "PAINBE8",
+      "text" : "In the past 7 days\nWhen I was in pain I moved extremely slowly"
+    },
+    {
+      "answer" : [
+        {
+          "valueCoding" : {
+            "code" : "4",
+            "display" : "Sometimes"
+          }
+        }
+      ],
+      "linkId" : "PAINBE16",
+      "text" : "In the past 7 days\nWhen I was in pain I appeared upset or sad"
+    },
+    {
+      "answer" : [
+        {
+          "valueCoding" : {
+            "code" : "4",
+            "display" : "Sometimes"
+          }
+        }
+      ],
+      "linkId" : "PAINBE26",
+      "text" : "In the past 7 days\nPain caused me to curl up in a ball"
+    },
+    {
+      "answer" : [
+        {
+          "valueCoding" : {
+            "code" : "4",
+            "display" : "Sometimes"
+          }
+        }
+      ],
+      "linkId" : "PAINBE27",
+      "text" : "In the past 7 days\nI had pain so bad it made me cry"
+    },
+    {
+      "answer" : [
+        {
+          "valueString" : "62.0"
+        }
+      ],
+      "linkId" : "tscore",
+      "text" : "T-Score"
+    },
+    {
+      "answer" : [
+        {
+          "valueString" : "1.0"
+        }
+      ],
+      "linkId" : "stderror",
+      "text" : "Standard Error"
+    }
+  ]
+}
+
