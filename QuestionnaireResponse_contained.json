@@ -12,10 +12,10 @@
       "reference" : "ProcedureRequest\/161918"
     }
   ],
+  "status" : "completed",
   "questionnaire" : {
     "reference" : "#contained-62212-6"
   },
-  "status" : "completed",
   "contained" : [
     {
       "publisher" : "PROMIS Health Organization and PROMIS Cooperative Group",
